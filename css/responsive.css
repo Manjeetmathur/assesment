@@ -1,0 +1,473 @@
+/* ==========================================================================
+   LAVNA Smart Safe Locker - Responsive Media Queries Styles
+   ========================================================================== */
+
+/* --- Tablet Devices (1024px and below) --- */
+@media (max-width: 1024px) {
+    .hero-slide {
+        padding: 50px 40px;
+        justify-content: center;
+        text-align: center;
+        background-position: 80% center;
+    }
+    
+    .slide-overlay {
+        background: radial-gradient(circle at center, rgba(7, 12, 30, 0.65) 0%, rgba(7, 12, 30, 0.8) 100%);
+    }
+    
+    .hero-slide-content {
+        align-items: center;
+        max-width: 100%;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .price-badge-container {
+        justify-content: center;
+    }
+
+    /* Carousel Tablet Adjustments */
+    .prev-btn {
+        left: 15px;
+    }
+    
+    .next-btn {
+        right: 15px;
+    }
+    
+    .carousel-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 14px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+    
+    .feature-card.highlighted {
+        grid-column: span 2;
+    }
+    
+    .enquiry-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    
+    .enquiry-info {
+        text-align: center;
+    }
+    
+    .enquiry-info p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .info-item {
+        text-align: left;
+    }
+
+    /* --- Product Picker Section Tablet Adjustments --- */
+    .picker-card {
+        grid-template-columns: 1fr;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .options-column {
+        align-self: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .safe-options-list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .safe-option-item {
+        flex: 1;
+        max-width: 180px;
+        justify-content: center;
+    }
+
+    /* --- Access Ways Section Tablet Adjustments --- */
+    .access-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 16px;
+    }
+    
+
+
+    /* --- Footer Tablet Adjustments --- */
+    .footer-grid-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+    
+    .vertical-divider {
+        display: none;
+    }
+
+    /* --- Pop-up Modal Tablet Adjustments --- */
+    .enquiry-modal-overlay {
+        align-items: flex-start;
+        overflow-y: auto;
+        padding: 30px 10px;
+    }
+    
+    .enquiry-modal-card {
+        max-width: 680px;
+    }
+    
+    .enquiry-modal-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .enquiry-modal-left {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 30px 24px;
+    }
+    
+    .enquiry-modal-right {
+        padding: 30px 24px;
+    }
+    
+    .modal-form-card {
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding: 0;
+        max-width: 100%;
+    }
+
+    /* --- Banner Showcase Section Tablet Adjustments --- */
+    .access-ways-section {
+        margin: 40px auto;
+    }
+    .banner-showcase-section {
+        padding: 20px 0;
+    }
+    .banner-showcase-container {
+        padding: 0 16px;
+        gap: 20px;
+    }
+}
+
+/* --- Mobile Devices (768px and below) --- */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+    
+    .hero-section {
+        padding: 0 16px;
+        margin: 20px auto;
+    }
+    
+    .hero-slide {
+        padding: 40px 24px;
+        border-radius: var(--border-radius-md);
+        min-height: 440px;
+        background-position: 80% center; /* Align safe locker to right center to prevent clipping */
+    }
+    
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-description {
+        font-size: 15px;
+    }
+    
+    .price-badge {
+        padding: 12px 28px;
+        font-size: 15px;
+    }
+
+    /* Carousel Mobile Adjustments */
+    .carousel-btn {
+        display: none; /* Hide buttons on mobile - swipe/dots only */
+    }
+    
+    .carousel-indicators {
+        bottom: 16px;
+    }
+    
+    .features-section {
+        margin: 50px auto;
+        padding: 0 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-card.highlighted {
+        grid-column: span 1;
+    }
+    
+    .enquiry-section {
+        padding: 50px 0;
+    }
+    
+    .enquiry-container {
+        padding: 0 16px;
+    }
+    
+    .enquiry-form-card {
+        padding: 30px 20px;
+    }
+    
+    .enquiry-info h2 {
+        font-size: 32px;
+    }
+    
+    .floating-enquiry-btn {
+        display: none; /* Hide on small mobile to not overlap content */
+    }
+
+    /* --- Product Picker Section Mobile Adjustments --- */
+    .picker-section-title {
+        font-size: 26px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .picker-card {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .options-column {
+        order: 1; /* Options on top */
+    }
+
+    .image-column {
+        order: 2; /* Lock image in middle */
+    }
+
+    .details-column {
+        order: 3; /* Product details/buy button at bottom */
+    }
+
+    .product-display-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .price-rating-row {
+        justify-content: center;
+    }
+
+    .original-price {
+        text-align: center;
+    }
+
+    .ratings-block {
+        justify-content: center;
+    }
+
+    .picker-meta-row {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .access-ways-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .safe-options-list {
+        gap: 10px;
+    }
+
+    .safe-option-item {
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .option-thumbnail-container {
+        width: 44px;
+        height: 44px;
+    }
+
+    .option-label {
+        font-size: 11px;
+    }
+
+    /* --- Access Ways Section Mobile Adjustments --- */
+    .access-watermark {
+        font-size: 100px;
+        top: -10px;
+        left: 5%;
+    }
+    
+    .access-subtitle-label {
+        font-size: 16px;
+        text-align: center;
+        display: block;
+    }
+    
+    .access-cards-grid {
+        grid-template-columns: 1fr;
+        display: grid;
+        gap: 16px;
+    }
+    
+    .access-ways-section {
+        margin: 24px auto;
+    }
+    
+    .banner-showcase-section {
+        padding: 12px 0;
+    }
+    
+    .banner-showcase-container {
+        padding: 0 12px;
+        gap: 16px;
+    }
+    
+
+    
+    .access-card-image {
+        height: 160px;
+    }
+
+    /* --- Testimonials Section Mobile Adjustments --- */
+    .testimonials-section-title {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    
+    .testimonial-card {
+        width: 260px;
+        padding: 40px 16px 20px 16px;
+    }
+    
+    .testimonial-quote {
+        font-size: 12.5px;
+    }
+    
+    .client-name {
+        font-size: 14.5px;
+    }
+
+    /* --- Footer Mobile Adjustments --- */
+    .footer-payments-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+    
+    .payment-logos-list {
+        justify-content: center;
+        gap: 16px;
+    }
+    
+    .footer-grid-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .brand-col {
+        align-items: center;
+    }
+    
+    .footer-links-list a:hover {
+        transform: none;
+    }
+    
+    .footer-social-row {
+        justify-content: center;
+    }
+    
+    .footer-support-phones {
+        align-items: center;
+    }
+
+    /* --- Pop-up Modal Mobile Adjustments --- */
+    .enquiry-modal-card {
+        border-radius: 16px;
+        width: 95%;
+    }
+    
+    .modal-availability-title {
+        font-size: 18px;
+        text-align: center;
+        margin: 16px 0;
+    }
+    
+    .modal-safes-showcase {
+        gap: 8px;
+    }
+    
+    .modal-safe-item img {
+        max-height: 180px;
+    }
+
+    
+    .form-title-main {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .form-subtitle-sub {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+/* --- Small Mobile Devices (480px and below) --- */
+@media (max-width: 480px) {
+    .modal-logo-divider,
+    .modal-logo-sub {
+        display: none !important;
+    }
+    
+    .modal-logo-text {
+        font-size: 16px;
+    }
+    
+    .modal-brand-header {
+        gap: 4px;
+    }
+    
+    .enquiry-modal-left {
+        padding: 24px 16px;
+    }
+    
+    .enquiry-modal-right {
+        padding: 24px 16px;
+    }
+    
+    .enquiry-modal-close {
+        top: 16px;
+        right: 16px;
+    }
+}

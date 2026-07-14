@@ -1,0 +1,125 @@
+/* ==========================================================================
+   LAVNA Smart Safe Locker - Testimonials Section Styles
+   ========================================================================== */
+
+.testimonials-section {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 24px;
+}
+
+.testimonials-container {
+    width: 100%;
+}
+
+.testimonials-section-title {
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 60px;
+    background: linear-gradient(90deg, #00d2ff 0%, #0066eb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.5px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.testimonials-slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    gap: 24px;
+    width: max-content;
+}
+
+.testimonial-card {
+    width: 290px;
+    flex-shrink: 0;
+    background: var(--bg-white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 50px 24px 30px 24px;
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition-smooth);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    border-color: rgba(0, 102, 235, 0.15);
+}
+
+.client-avatar-container {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--bg-white);
+    border: 4px solid var(--bg-white);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.client-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-quote {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--text-dark);
+    line-height: 1.5;
+    margin-bottom: 14px;
+    text-align: center;
+}
+
+.client-name {
+    font-size: 16px;
+    font-weight: 800;
+    color: #1e3a8a; /* Deep blue client name matching screenshot */
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.client-name::before, .client-name::after {
+    content: '';
+    position: absolute;
+    top: 52%;
+    width: 16px;
+    height: 1px;
+    background-color: rgba(30, 58, 138, 0.2);
+}
+
+.client-name::before {
+    left: -26px;
+}
+
+.client-name::after {
+    right: -26px;
+}
+
+.testimonial-paragraph {
+    font-size: 12px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin: 0;
+}

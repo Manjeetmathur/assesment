@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAVNA Safe Locker | Strong. Secure. Smart.</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <img src="public/logo.png" alt="LAVNA Logo" style="height: 36px; display: block; width: auto;">
+            </a>
+            <a href="#enquiry-section" class="contact-btn">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Floating Send Enquiry Button -->
+    <button class="floating-enquiry-btn" id="floatingEnquiryBtn" aria-label="Send Enquiry">
+        <span>Send Enquiry</span>
+        <i class="fa-solid fa-paper-plane"></i>
+    </button>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section (Section 1) -->
+        <!-- Hero Section (Section 1) -->
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-carousel-wrapper">
+                    <div class="hero-carousel">
+                        <!-- Slide 1: Strong & Secure (using hero-banner.png as background) -->
+                        <div class="hero-slide active" data-index="0" style="background-image: url('public/hero-banner.png');">
+                            <div class="slide-overlay"></div>
+                            <div class="hero-slide-content">
+                                <div class="hero-header">
+                                    <span class="brand-tag">LAVNA</span>
+                                    <span class="divider">|</span>
+                                    <span class="sub-tag">Safe Locker</span>
+                                </div>
+                                <h1 class="hero-title">
+                                    Strong. Secure.<br>
+                                    <span class="gradient-text">Smart Safe Locker.</span>
+                                </h1>
+                                <p class="hero-description">
+                                    Secure Fingerprint Unlocking with 0.4s Quick Access and Convenient Mobile App Access.
+                                </p>
+                                <div class="price-badge-container">
+                                    <a href="#enquiry-section" class="price-badge">
+                                        Starting from ₹5,990/-
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2: Next-Gen Protection (using hero-banner.png as background) -->
+                        <div class="hero-slide" data-index="1" style="background-image: url('public/hero-banner2.png');">
+                            <div class="slide-overlay"></div>
+                            <div class="hero-slide-content">
+                                <div class="hero-header">
+                                    <span class="brand-tag">LAVNA</span>
+                                    <span class="divider">|</span>
+                                    <span class="sub-tag">Smart Home</span>
+                                </div>
+                                <h1 class="hero-title">
+                                    Next-Gen Security<br>
+                                    <span class="gradient-text">Premium Protection.</span>
+                                </h1>
+                                <p class="hero-description">
+                                    Engineered with a high-density, multi-layered steel body and double locking bolts for maximum resistance.
+                                </p>
+                                <div class="price-badge-container">
+                                    <a href="#enquiry-section" class="price-badge">
+                                        Explore Smart Series
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Navigation Controls -->
+                    <button class="carousel-btn prev-btn" id="prevSlide" aria-label="Previous slide">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="nextSlide" aria-label="Next slide">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Carousel Indicator Dots -->
+                    <div class="carousel-indicators">
+                        <span class="indicator-dot active" data-index="0" role="button" aria-label="Go to slide 1"></span>
+                        <span class="indicator-dot" data-index="1" role="button" aria-label="Go to slide 2"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Picker Section (Section 1.5) -->
+        <section class="product-picker-section" id="product-picker">
+            <div class="picker-container">
+                <h2 class="picker-section-title">Choose Secure Safe Lockers Here</h2>
+                
+                <div class="picker-card">
+                    <!-- Left Column: Details -->
+                    <div class="picker-column details-column">
+                        <h3 class="product-display-title" id="displayTitle">LAVNA 39L Smart Safe Locker suitable for Jewelry, Cash, Document & other valuables</h3>
+                        
+                        <div class="price-rating-row">
+                            <div class="discount-badge" id="displayDiscount">-75%</div>
+                            <div class="current-price" id="displayPrice">Rs. 5,990.00</div>
+                        </div>
+                        <div class="original-price" id="displayOriginalPrice">Rs. 23,990.00</div>
+                        
+                        <div class="ratings-block">
+                            <span class="rating-label">Ratings</span>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+                            <span class="rating-count">(350+)</span>
+                        </div>
+                        
+                        <hr class="picker-divider">
+                        
+                        <div class="picker-meta-row">
+                            <div class="meta-item">
+                                <span class="meta-label">Sold</span>
+                                <span class="meta-value" id="displaySold">10000+</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Warranty Period</span>
+                                <span class="meta-value">1 Year</span>
+                            </div>
+                        </div>
+                        
+                        <div class="access-ways-block">
+                            <h4 class="access-ways-title">Access Ways</h4>
+                            <div class="access-ways-grid">
+                                <div class="access-way-item">
+                                    <i class="fa-solid fa-fingerprint"></i>
+                                    <span>Fingerprint Access</span>
+                                </div>
+                                <div class="access-way-item">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>Mobile App Access</span>
+                                </div>
+                                <div class="access-way-item">
+                                    <i class="fa-solid fa-key"></i>
+                                    <span>Manual Key Access</span>
+                                </div>
+                                <div class="access-way-item">
+                                    <i class="fa-solid fa-message"></i>
+                                    <span>OTP Access</span>
+                                </div>
+                                <div class="access-way-item">
+                                    <i class="fa-solid fa-calculator"></i>
+                                    <span>Pin Access</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#enquiry-section" class="picker-buy-btn">Buy Now</a>
+                    </div>
+                    
+                    <!-- Middle Column: Product Image -->
+                    <div class="picker-column image-column">
+                        <div class="product-image-wrapper">
+                            <img src="public/safe-39l.png" alt="Smart Safe Locker" id="displayImage" class="product-display-image">
+                        </div>
+                    </div>
+                    
+                    <!-- Right Column: Options Selector -->
+                    <div class="picker-column options-column">
+                        <h4 class="options-title">Our Safe Lock Options</h4>
+                        <div class="safe-options-list">
+                            <!-- Option 1 -->
+                            <div class="safe-option-item active" data-volume="39">
+                                <div class="option-thumbnail-container">
+                                    <img src="public/safe-39l.png" alt="Safe 39 Ltr" class="option-thumbnail">
+                                </div>
+                                <span class="option-label">Safe<br>39 Ltr</span>
+                            </div>
+                            <!-- Option 2 -->
+                            <div class="safe-option-item" data-volume="49">
+                                <div class="option-thumbnail-container">
+                                    <img src="public/safe-49l.png" alt="Safe 49 Ltr" class="option-thumbnail">
+                                </div>
+                                <span class="option-label">Safe<br>49 Ltr</span>
+                            </div>
+                            <!-- Option 3 -->
+                            <div class="safe-option-item" data-volume="58">
+                                <div class="option-thumbnail-container">
+                                    <img src="public/safe-58l.png" alt="Safe 58 Ltr" class="option-thumbnail">
+                                </div>
+                                <span class="option-label">Safe<br>58 Ltr</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Access Ways Section (Section 2) -->
+        <section class="access-ways-section" id="access-ways">
+            <!-- Background watermark watermark -->
+            <div class="access-watermark">4 WAY</div>
+            
+            <div class="access-container">
+                <div class="access-header">
+                    <span class="access-subtitle-label">ACCESS WAYS</span>
+                </div>
+                
+                <div class="access-cards-grid">
+                    <!-- Card 1: Fingerprint -->
+                    <div class="access-way-card">
+                        <div class="access-card-image">
+                            <img src="public/access-fingerprint.png" alt="Fingerprint Access">
+                        </div>
+                        <div class="access-card-text">
+                            <h3>FINGERPRINT</h3>
+                            <p>Unlock instantly with a 0.4-second 360° fingerprint sensor.</p>
+                            <span class="card-number-watermark">1</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Mobile App -->
+                    <div class="access-way-card">
+                        <div class="access-card-image">
+                            <img src="public/access-app.png" alt="Mobile App Access">
+                        </div>
+                        <div class="access-card-text">
+                            <h3>MOBILE APP</h3>
+                            <p>Control and unlock your safe conveniently through the mobile app.</p>
+                            <span class="card-number-watermark">2</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 3: Pincode -->
+                    <div class="access-way-card">
+                        <div class="access-card-image">
+                            <img src="public/access-pin.png" alt="Pincode Access">
+                        </div>
+                        <div class="access-card-text">
+                            <h3>PINCODE</h3>
+                            <p>Enter your secure master PIN for quick daily access.</p>
+                            <span class="card-number-watermark">3</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 4: Mechanical Key -->
+                    <div class="access-way-card">
+                        <div class="access-card-image">
+                            <img src="public/access-key.png" alt="Mechanical Key Access">
+                        </div>
+                        <div class="access-card-text">
+                            <h3>MECHANICAL KEY</h3>
+                            <p>Mechanical key access also available for your convenience.</p>
+                            <span class="card-number-watermark">4</span>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Showcase Section -->
+        <section class="banner-showcase-section">
+            <div class="banner-showcase-container">
+                    <div class="banner-item">
+                        <img src="public/image.png" alt="LAVNA Locker Details">
+                    </div>
+                    <div class="banner-item">
+                        <img src="public/image copy.png" alt="LAVNA Safe Features">
+                    </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section (Section 3) -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="testimonials-container">
+                <h2 class="testimonials-section-title">REAL PEOPLE. REAL STORIES.</h2>
+                
+                <div class="testimonials-slider-wrapper">
+                    <div class="testimonials-track">
+                        <!-- Card 1: Divyansh Sehgal -->
+                        <div class="testimonial-card">
+                            <div class="client-avatar-container">
+                                <img src="public/user-1.png" alt="Divyansh Sehgal" class="client-avatar">
+                            </div>
+                            <h4 class="testimonial-quote">I Needed Something Strong And Smart | This Safe Delivered.</h4>
+                            <h3 class="client-name">Divyansh Sehgal</h3>
+                            <p class="testimonial-paragraph">She stores jewelry and confidential papers daily with full confidence.</p>
+                        </div>
+                        
+                        <!-- Card 2: Shiva Kumar -->
+                        <div class="testimonial-card">
+                            <div class="client-avatar-container">
+                                <img src="public/user-2.png" alt="Shiva Kumar" class="client-avatar">
+                            </div>
+                            <h4 class="testimonial-quote">I Finally Have Peace Of Mind | This Safe Is Totally Worth It.</h4>
+                            <h3 class="client-name">Shiva Kumar</h3>
+                            <p class="testimonial-paragraph">She stores cash and documents securely and now travels without constant worry.</p>
+                        </div>
+                        
+                        <!-- Card 3: Amit Verma -->
+                        <div class="testimonial-card">
+                            <div class="client-avatar-container">
+                                <img src="public/user-3.png" alt="Amit Verma" class="client-avatar">
+                            </div>
+                            <h4 class="testimonial-quote">I Trust This Safe Completely | Strong And Reliable Security.</h4>
+                            <h3 class="client-name">Amit Verma</h3>
+                            <p class="testimonial-paragraph">His business files and emergency cash stay locked safely with full password protection.</p>
+                        </div>
+                        
+                        <!-- Card 4: Shivam Kumar -->
+                        <div class="testimonial-card">
+                            <div class="client-avatar-container">
+                                <img src="public/user-4.png" alt="Shivam Kumar" class="client-avatar">
+                            </div>
+                            <h4 class="testimonial-quote">I Chose Safety Over Worry | Best Decision For My Family.</h4>
+                            <h3 class="client-name">Shivam Kumar</h3>
+                            <p class="testimonial-paragraph">He installed it for gold and important files, and now feels far more relaxed.</p>
+                        </div>
+                        
+                        <!-- Card 5: Divya Sehgal (Duplicate Card 1 variant for circular seamless scroll) -->
+                        <div class="testimonial-card">
+                            <div class="client-avatar-container">
+                                <img src="public/user-1.png" alt="Divya Sehgal" class="client-avatar">
+                            </div>
+                            <h4 class="testimonial-quote">Excellent Product Quality | Highly Recommended For Offices.</h4>
+                            <h3 class="client-name">Divya Sehgal</h3>
+                            <p class="testimonial-paragraph">Stores confidential business papers and sensitive files with absolute ease.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Top Row: Payments -->
+            <div class="footer-payments-row">
+                <span class="payment-methods-title">Payment Methods</span>
+                <div class="payment-logos-list">
+                    <span class="visa-logo">VISA</span>
+                    
+                    <div class="mastercard-logo">
+                        <span class="circle circle-red"></span>
+                        <span class="circle circle-orange"></span>
+                    </div>
+                    
+                    <span class="rupay-logo">RuPay<i>❯</i></span>
+                    <span class="paytm-logo">paytm</span>
+                    <span class="gpay-logo">G Pay</span>
+                    <span class="phonepe-logo"><i class="fa-solid fa-p"></i> PhonePe</span>
+                </div>
+            </div>
+            
+            <!-- Bottom Row: Quick/Support Links -->
+            <div class="footer-grid-row">
+                <!-- Col 1: Brand -->
+                <div class="footer-column brand-col">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L6 17V33H34V17L20 5Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                            <path d="M20 13V25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="20" cy="25" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="logo-text">LAVNA</span>
+                    </a>
+                    <p class="brand-desc">Advanced security solutions built for the modern home. Protect what matters most with smart, biometric safe lockers.</p>
+                </div>
+                
+                <div class="vertical-divider"></div>
+                
+                <!-- Col 2: Quick Links -->
+                <div class="footer-column links-col">
+                    <h4 class="footer-col-title">Quick Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#product-picker">About Us</a></li>
+                        <li><a href="#product-picker">Collection</a></li>
+                        <li><a href="#" class="contact-trigger">Contact Us</a></li>
+                        <li><a href="#testimonials">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="vertical-divider"></div>
+                
+                <!-- Col 3: Support Links -->
+                <div class="footer-column links-col">
+                    <h4 class="footer-col-title">Support Links</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return & Replacement</a></li>
+                        <li><a href="#">Warranty</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="vertical-divider"></div>
+                
+                <!-- Col 4: Social & Contact -->
+                <div class="footer-column contact-col">
+                    <h4 class="footer-col-title">Social Media</h4>
+                    
+                    <div class="footer-social-row">
+                        <a href="#" class="social-icon fb" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon ig" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon ln" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    
+                    <div class="footer-support-phones">
+                        <div class="phone-item">
+                            <span class="phone-label">Sales Support</span>
+                            <a href="tel:+919971427608" class="phone-number">+91 9971427608</a>
+                        </div>
+                        <div class="phone-item">
+                            <span class="phone-label">Customer Support</span>
+                            <a href="tel:+919667771077" class="phone-number">+91 9667771077</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom-row">
+                <p>&copy; 2026 LAVNA Locks. All rights reserved. Web Developer Assignment.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal Overlay -->
+    <div class="success-modal-overlay" id="successModal">
+        <div class="success-modal-card">
+            <div class="success-icon-wrapper">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Enquiry Submitted!</h3>
+            <p>Thank you for reaching out. Our security experts will get in touch with you shortly.</p>
+            <button class="modal-close-btn" id="closeModalBtn">Done</button>
+        </div>
+    </div>
+
+    <!-- Enquiry Pop-up Modal Overlay -->
+    <div class="enquiry-modal-overlay" id="enquiryModal">
+        <div class="enquiry-modal-card">
+            <!-- Close Button -->
+            <button class="enquiry-modal-close" id="closeEnquiryModal" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <div class="enquiry-modal-grid">
+                <!-- Left Side: Product Showcase -->
+                <div class="enquiry-modal-left">
+                    <div class="modal-brand-header">
+                        <svg class="modal-logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 5L6 17V33H34V17L20 5Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+                            <path d="M20 13V25" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            <circle cx="20" cy="25" r="3" fill="currentColor"/>
+                        </svg>
+                        <span class="modal-logo-text">LAVNA</span>
+                        <span class="modal-logo-divider">|</span>
+                        <span class="modal-logo-sub">Safe Locker</span>
+                    </div>
+                    
+                    <h4 class="modal-availability-title">Available in <span class="blue-text">3 Sizes</span></h4>
+                    
+                    <div class="modal-safes-showcase">
+                        <!-- 39 Litre -->
+                        <div class="modal-safe-item item-39l">
+                            <div class="modal-image-wrapper">
+                                <img src="public/contact.png" alt="LAVNA 39 Litre Safe">
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+                
+                <!-- Right Side: Form -->
+                <div class="enquiry-modal-right">
+                    <div class="modal-form-card">
+                        <h3 class="form-title-main">Have Enquiry?</h3>
+                        <h4 class="form-subtitle-sub">Request a Call Back</h4>
+                        
+                        <form id="enquiryForm" novalidate>
+                            <!-- Name Field -->
+                            <div class="form-group-popup">
+                                <label for="userName">Name <span class="required">*</span></label>
+                                <input type="text" id="userName" name="name" placeholder="Enter Name" required>
+                                <span class="error-msg-popup" id="nameError">Name is required</span>
+                            </div>
+                            
+                            <!-- Phone Field -->
+                            <div class="form-group-popup">
+                                <label for="userPhone">Phone Number <span class="required">*</span></label>
+                                <input type="tel" id="userPhone" name="phone" placeholder="Enter Phone Number" required>
+                                <span class="error-msg-popup" id="phoneError">Enter a valid 10-digit phone number</span>
+                            </div>
+                            
+                            <!-- Message Field -->
+                            <div class="form-group-popup">
+                                <label for="userMessage">Message (if any)</label>
+                                <textarea id="userMessage" name="message" rows="3" placeholder="Write a message"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="popup-submit-btn">Submit</button>
+                        </form>
+                        
+                        <div class="popup-social-footer">
+                            <p>For faster response! Click the link below</p>
+                            <div class="social-links-row">
+                                <a href="https://wa.me/919971427608" target="_blank" class="social-icon-btn whatsapp-btn" aria-label="Chat on WhatsApp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="tel:+919971427608" class="social-icon-btn call-btn" aria-label="Call Us">
+                                    <i class="fa-solid fa-phone"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

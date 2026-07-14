@@ -1,0 +1,121 @@
+/* ==========================================================================
+   LAVNA Smart Safe Locker - Access Ways Section Styles
+   ========================================================================== */
+
+.access-ways-section {
+    position: relative;
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 24px;
+    overflow: hidden;
+}
+
+.access-watermark {
+    position: absolute;
+    top: -30px;
+    left: 20%;
+    font-size: 180px;
+    font-weight: 900;
+    color: rgba(30, 58, 138, 0.03);
+    z-index: 1;
+    pointer-events: none;
+    letter-spacing: -2px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.access-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.access-header {
+    margin-bottom: 32px;
+}
+
+.access-subtitle-label {
+    font-size: 20px;
+    font-weight: 800;
+    color: #3b82f6; /* Cyan-blue accent color matching screenshot */
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.access-cards-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.access-way-card {
+    flex: 1;
+    background: var(--bg-white);
+    border: 2px solid rgba(0, 229, 255, 0.15); /* Light cyan outline border */
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+}
+
+.access-way-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(0, 229, 255, 0.6); /* Glowing hover border */
+    box-shadow: 0 12px 30px rgba(0, 229, 255, 0.15);
+}
+
+.access-card-image {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.access-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.access-way-card:hover .access-card-image img {
+    transform: scale(1.06);
+}
+
+.access-card-text {
+    padding: 24px 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: var(--bg-light);
+}
+
+.access-card-text h3 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1e3a8a; /* Deep blue header matching screenshot */
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+}
+
+.access-card-text p {
+    font-size: 12px;
+    color: var(--text-gray);
+    line-height: 1.6;
+    z-index: 2;
+    margin: 0;
+}
+
+.card-number-watermark {
+    position: absolute;
+    bottom: -10px;
+    right: 10px;
+    font-size: 80px;
+    font-weight: 900;
+    color: rgba(30, 58, 138, 0.04); /* Faint watermark number in cards */
+    z-index: 1;
+    pointer-events: none;
+    line-height: 1;
+}

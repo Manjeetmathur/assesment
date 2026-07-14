@@ -1,0 +1,314 @@
+/* ==========================================================================
+   LAVNA Smart Safe Locker - Pop-up Enquiry Modal Styles
+   ========================================================================== */
+
+.enquiry-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 12, 30, 0.6); /* Translucent backdrop overlay */
+    backdrop-filter: blur(8px); /* Backdrop blur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.enquiry-modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.enquiry-modal-card {
+    background-color: var(--bg-white);
+    border-radius: 24px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    transform: scale(0.9);
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.enquiry-modal-overlay.active .enquiry-modal-card {
+    transform: scale(1);
+}
+
+.enquiry-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.05);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--text-dark);
+    font-size: 18px;
+    z-index: 10;
+    transition: var(--transition-smooth);
+}
+
+.enquiry-modal-close:hover {
+    background: rgba(0, 0, 0, 0.1);
+    transform: rotate(90deg);
+}
+
+.enquiry-modal-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+}
+
+/* Left Side: Product Showcase */
+.enquiry-modal-left {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal-brand-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-color);
+}
+
+.modal-logo-icon {
+    width: 26px;
+    height: 26px;
+    color: #3b82f6;
+}
+
+.modal-logo-text {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    color: var(--text-dark);
+}
+
+.modal-logo-divider {
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.modal-logo-sub {
+    font-size: 15px;
+    color: var(--text-gray);
+    font-weight: 600;
+}
+
+.modal-availability-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin: 24px 0;
+}
+
+.modal-availability-title .blue-text {
+    color: #3b82f6; /* Cyan blue highlight matching screenshot */
+}
+
+.modal-safes-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.modal-safe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.modal-image-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-safe-item img {
+    width: 100%;
+    height: auto;
+    max-height: 380px; /* large enough to make it big like in the design! */
+    object-fit: contain;
+    filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.1));
+    transition: transform 0.3s ease;
+}
+
+.modal-safe-item:hover img {
+    transform: scale(1.03);
+}
+
+
+/* Right Side: Form Content */
+.enquiry-modal-right {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); /* Same gradient for joined look */
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form-card {
+    background-color: var(--bg-white);
+    border-radius: 24px;
+    padding: 40px 30px;
+    border: 3px solid rgba(0, 0, 0, 0.05);
+    width: 100%;
+}
+
+.form-title-main {
+    font-size: 26px;
+    font-weight: 800;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.form-subtitle-sub {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-gray);
+    margin-bottom: 24px;
+}
+
+.form-group-popup {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group-popup label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 6px;
+}
+
+.form-group-popup label .required {
+    color: #ef4444;
+}
+
+.form-group-popup input,
+.form-group-popup textarea {
+    width: 100%;
+    padding: 11px 14px;
+    border-radius: 8px;
+    border: 1.5px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--bg-white);
+    font-size: 14px;
+    color: var(--text-dark);
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form-group-popup input:focus,
+.form-group-popup textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.form-group-popup textarea {
+    resize: none;
+}
+
+.form-group-popup.invalid input,
+.form-group-popup.invalid textarea {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.01);
+}
+
+.error-msg-popup {
+    font-size: 11px;
+    color: #ef4444;
+    font-weight: 600;
+    margin-top: 4px;
+    display: none;
+}
+
+.form-group-popup.invalid .error-msg-popup {
+    display: block;
+}
+
+.popup-submit-btn {
+    width: 160px;
+    align-self: center;
+    justify-content: center;
+    background-color: #3b82f6; /* Blue oval button matching screenshot */
+    color: var(--text-white);
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 24px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+    margin-top: 8px;
+}
+
+.popup-submit-btn:hover {
+    background-color: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.3);
+}
+
+.popup-social-footer {
+    margin-top: 24px;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 16px;
+}
+
+.popup-social-footer p {
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.social-links-row {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.social-icon-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--text-white);
+    transition: var(--transition-smooth);
+}
+
+.social-icon-btn:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-btn {
+    background-color: #22c55e; /* Green whatsapp */
+}
+
+.call-btn {
+    background-color: #0284c7; /* Blue telephone */
+}
