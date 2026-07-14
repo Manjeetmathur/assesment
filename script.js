@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 'Rs. 5,990.00',
             originalPrice: 'Rs. 23,990.00',
             sold: '10000+',
-            image: 'public/safe-39l.png'
+            image: 'image/safe-39l.png'
         },
         '49': {
             title: 'LAVNA 49L Smart Safe Locker suitable for Jewelry, Cash, Document & other valuables',
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 'Rs. 7,990.00',
             originalPrice: 'Rs. 27,990.00',
             sold: '8500+',
-            image: 'public/safe-49l.png'
+            image: 'image/safe-49l.png'
         },
         '58': {
             title: 'LAVNA 58L Smart Safe Locker suitable for Jewelry, Cash, Document & other valuables',
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', () => {
             price: 'Rs. 9,990.00',
             originalPrice: 'Rs. 32,990.00',
             sold: '6200+',
-            image: 'public/safe-58l.png'
+            image: 'image/safe-58l.png'
         }
     };
 
